@@ -7,7 +7,7 @@ Code repository for our paper on:
 See [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1)
   
 ## Authors
-- Adam Coxson *
+- Adam Coxson
 - Omer Omar
 - Marcos del Cueto
 - Alessandro Troisi
