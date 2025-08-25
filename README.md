@@ -4,7 +4,7 @@ Code repository for our paper on:
 
 "Predicting S1 TDDFT energies from ZINDO calculations using Message-Passing Delta-ML with electronically-informed descriptors"
 
-See [ChemRxiv](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1)
+See our [ChemRxiv working paper](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1)
   
 ## Authors
 - Adam Coxson
