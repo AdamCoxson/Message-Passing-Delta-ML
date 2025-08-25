@@ -1,0 +1,74 @@
+Example console output from running test_model.py
+I used a NVIDIA GeForce RTX 3080 CUDA enabled GPU.
+
+The three blocks below correspond to validation and 
+test set metrics for 3 pretrained models from preprint
+https://doi.org/10.26434/chemrxiv-2025-gln8z-v2
+
+1) Dense(MPNN(EA, DA), E_zindo)
+2) MPNN(EA, DA)
+3) MPNN(DA)
+
+Test data: pre-processed_testset_407_mols.pkl
+Train data: pre-processed_trainset_9050_mols.pkl
+Fold indices: 10_kfold_indices_9050_mol.pkl
+10 folds, 407 test set, 9050 validation set
+
+---------------------------------------------
+Model: AttentiveFP_with_Zindo
+Time to predict 407 molecules = 0.035 ± 0.032 seconds per fold
+Time per molecule =  0.086 milli-seconds
+
+Calculate metrics for each fold, then average metrics
+Val pearson r     = 0.963 ± 0.004
+Val rmse          = 0.180 ± 0.008
+Val mae           = 0.125 ± 0.004
+Test pearson r    = 0.947 ± 0.002
+Test rmse         = 0.177 ± 0.004
+Test mae          = 0.133 ± 0.002
+
+Average fold predictions, then calculate metrics
+Test mean pearson r    = 0.953
+Test mean rmse         = 0.167
+Test mean mae          = 0.125
+---------------------------------------------
+
+
+---------------------------------------------
+Model: AttentiveFP_only_electronic_atom_descriptors
+Time to predict 407 molecules = 0.026 ± 0.013 seconds per fold
+Time per molecule =  0.065 milli-seconds
+
+Calculate metrics for each fold, then average metrics
+Val pearson r     = 0.953 ± 0.005
+Val rmse          = 0.203 ± 0.010
+Val mae           = 0.135 ± 0.003
+Test pearson r    = 0.938 ± 0.003
+Test rmse         = 0.190 ± 0.004
+Test mae          = 0.140 ± 0.005
+
+Average fold predictions, then calculate metrics
+Test mean pearson r    = 0.947
+Test mean rmse         = 0.175
+Test mean mae          = 0.127
+---------------------------------------------
+
+
+---------------------------------------------
+Model: AttentiveFP_only_default_atom_descriptors
+Time to predict 407 molecules = 0.034 ± 0.012 seconds per fold
+Time per molecule =  0.083 milli-seconds
+
+Calculate metrics for each fold, then average metrics
+Val pearson r     = 0.937 ± 0.007
+Val rmse          = 0.232 ± 0.011
+Val mae           = 0.156 ± 0.004
+Test pearson r    = 0.912 ± 0.006
+Test rmse         = 0.226 ± 0.006
+Test mae          = 0.165 ± 0.007
+
+Average fold predictions, then calculate metrics
+Test mean pearson r    = 0.925
+Test mean rmse         = 0.209
+Test mean mae          = 0.149
+---------------------------------------------

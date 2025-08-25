@@ -1,0 +1,17 @@
+I installed a minimal package working environment via anaconda on
+windows distribution using these commands.
+
+
+conda create --name dml-minimal
+conda install conda-forge::pandas
+conda install conda-forge::numpy
+conda install anaconda::scipy
+conda install conda-forge::matplotlib
+conda install anaconda::scikit-learn
+pip3 install torch torchvision
+pip install torch_geometric
+conda install conda-forge::xyz2mol
+conda install conda-forge::rdkit
+
+
+
