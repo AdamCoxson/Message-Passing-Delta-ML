@@ -39,15 +39,15 @@ If you use this code or build upon our work, please cite our paper using the fol
 This project was developed and tested on **Python 3.10+** using an Anaconda environment on Windows.  
 The following packages are required:
 
-- [pandas]([https://pandas.pydata.org/](https://pandas.pydata.org/docs/getting_started/install.html))  
-- [numpy]([https://numpy.org/](https://numpy.org/install/))  
-- [scipy]([https://scipy.org/](https://scipy.org/install/))  
-- [matplotlib]([https://matplotlib.org/](https://matplotlib.org/stable/users/getting_started/))  
-- [scikit-learn]([https://scikit-learn.org/stable/](https://scikit-learn.org/stable/install.html))  
-- [PyTorch]([https://pytorch.org/](https://pytorch.org/get-started/locally/))  
-- [PyTorch Geometric]([https://pytorch-geometric.readthedocs.io/](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html))  
+- [pandas](https://pandas.pydata.org/docs/getting_started/install.html)  
+- [numpy](https://numpy.org/install/)
+- [scipy](https://scipy.org/install/)  
+- [matplotlib](https://matplotlib.org/stable/users/getting_started/)  
+- [scikit-learn](https://scikit-learn.org/stable/install.html)  
+- [PyTorch](https://pytorch.org/get-started/locally/)  
+- [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)  
 - [xyz2mol](https://github.com/jensengroup/xyz2mol)  
-- [RDKit]([https://www.rdkit.org/](https://github.com/rdkit/rdkit))  
+- [RDKit](https://github.com/rdkit/rdkit)
 
 ### Installation (via anaconda)
 
