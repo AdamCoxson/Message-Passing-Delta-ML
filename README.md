@@ -1,10 +1,8 @@
 # Message-Passing Δ-ML with Electronically Informed Descriptors
 
-Code repository for our paper on:
+Code repository for [ChemRxiv paper](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1) on:
 
 "Predicting S1 TDDFT energies from ZINDO calculations using Message-Passing Delta-ML with electronically-informed descriptors"
-
-See our [ChemRxiv working paper](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1)
   
 ## Authors
 - Adam Coxson
