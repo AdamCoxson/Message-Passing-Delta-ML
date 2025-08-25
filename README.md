@@ -12,7 +12,13 @@ We present a machine learning approach capable of enhancing the accuracy of semi
 Using a dataset of 10,000 organic π-conjugated molecules with energies computed at both the ZINDO and M06-2X/3-21G* TDDFT levels, we trained a model to learn the systematic errors of the low-level method and correct it toward high-level accuracy. Critical to the model’s performance is an AttentiveFP message-passing neural network augmented with electronic information from ZINDO (e.g., particle–hole densities from the transition density matrix). We also explore the utility of the Morgan fingerprint and introduce a novel descriptor for molecular electronic structure based on the radial distribution function weighted by molecular orbital coefficients. Finally, we discuss potential applications of this Δ-ML approach in virtual screening.
 
 ## Usage
-To run the pretrained model examples, create a suitable environment (See requirements), then open and run test_model.py. 
+To apply the pretrained models to the test and per-fold validation sets, create a suitable environment (See requirements), then open and run test_model.py. You can see an example of the console output in "Example_console_output_from_test_models.txt"
+  
+Directories:
+  data (.ZIP) - Preprocessed dataset class objects for 407 molecule testing set and the 9050 molecule training set, as well as the train-validation fold indices. These are saved as .pkl files (0.5 GB uncompressed)
+  pretrained_models (.ZIP) - Contains 3 selected models from the preprint: Dense(MPNN(DA, EA), E_zindo), MPNN(DA, EA), and MPNN(DA). (0.8 GB uncompressed)
+  saves - Empty folder where plots and csv are saved to after running test_model.py.
+  5_mol_ZINDO_mwfn_examples - Examples of the files required to create the datasets. (5 MB)
 
 **Note:** Tutorials for model training will be uploaded later.
 
@@ -26,34 +32,32 @@ If you use this code or build upon our work, please cite our paper using the fol
   year={2025},
   journal={ChemRxiv},
   doi={10.26434/chemrxiv-2025-gln8z-v2}
-}****
+}
 ```
 
 ## Requirements
-This project was developed and tested on **Python 3.10+** using a minimal Anaconda environment on Windows.  
+This project was developed and tested on **Python 3.10+** using an Anaconda environment on Windows.  
 The following packages are required:
 
-- [pandas](https://pandas.pydata.org/)  
-- [numpy](https://numpy.org/)  
-- [scipy](https://scipy.org/)  
-- [matplotlib](https://matplotlib.org/)  
-- [scikit-learn](https://scikit-learn.org/stable/)  
-- [PyTorch](https://pytorch.org/)  
-- [torchvision](https://pytorch.org/vision/stable/index.html)  
-- [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/)  
+- [pandas]([https://pandas.pydata.org/](https://pandas.pydata.org/docs/getting_started/install.html))  
+- [numpy]([https://numpy.org/](https://numpy.org/install/))  
+- [scipy]([https://scipy.org/](https://scipy.org/install/))  
+- [matplotlib]([https://matplotlib.org/](https://matplotlib.org/stable/users/getting_started/))  
+- [scikit-learn]([https://scikit-learn.org/stable/](https://scikit-learn.org/stable/install.html))  
+- [PyTorch]([https://pytorch.org/](https://pytorch.org/get-started/locally/))  
+- [PyTorch Geometric]([https://pytorch-geometric.readthedocs.io/](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html))  
 - [xyz2mol](https://github.com/jensengroup/xyz2mol)  
-- [RDKit](https://www.rdkit.org/)  
+- [RDKit]([https://www.rdkit.org/](https://github.com/rdkit/rdkit))  
 
-### Installation
+### Installation (via anaconda)
 
-To create a working environment, run:
+To create a minimal working environment on an anaconda distribution, run:
 
 ```bash
 conda create --name dml-minimal python=3.10
 conda activate dml-minimal
-
 conda install -c conda-forge pandas numpy matplotlib xyz2mol rdkit
 conda install -c anaconda scipy scikit-learn
-
 pip install torch torchvision torch_geometric
 ```
+****
