@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Coxson"
+    given-names: "Adam"
+    orcid: "https://orcid.org/0000-0002-6950-8190"
+title: "Message-Passing-Delta-ML with Electronically Informed Descriptors"
+version: 1.0.0
+doi: 10.5281/zenodo.17013195 
+date-released: 2025-08-25
+url: "https://github.com/AdamCoxson/Message-Passing-Delta-ML"
