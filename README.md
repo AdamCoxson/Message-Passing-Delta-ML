@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1033320600.svg)](https://doi.org/10.5281/zenodo.17013195)
+
 # Message-Passing Δ-ML with Electronically Informed Descriptors
 
 Code repository for [ChemRxiv paper](https://chemrxiv.org/engage/chemrxiv/article-details/68a7528423be8e43d65717c1) on:
